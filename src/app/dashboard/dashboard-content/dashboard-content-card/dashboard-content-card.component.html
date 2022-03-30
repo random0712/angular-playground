@@ -1,0 +1,9 @@
+<div class="content-card" *ngIf="data">
+    <div class="summary" (mouseenter)="setDescriptionStatus('mouseover', true)">
+        <div class="placeholder skeleton"></div>
+        <div class="title">{{data.projectTitle}}</div>
+    </div>
+    <div [@enterAnimation]="openDescription ? 'open' : 'closed'" *ngIf="openDescription" class="description"  (mouseleave)="setDescriptionStatus('mouseout', false)">
+        {{data.projectDescription}}
+    </div>
+</div>

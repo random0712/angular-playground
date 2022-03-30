@@ -1,0 +1,18 @@
+@use 'src/styles.scss';
+
+.dashboard {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+    .header {
+        background-color: styles.$header-color;
+        flex-grow: 2;
+        min-height: 70px;
+    }
+
+    .content {
+        background-color: styles.$background-color;
+        flex-grow: 11;
+    }
+}

@@ -1,0 +1,42 @@
+.content-card {
+    position: relative;
+    padding: 5px;
+    height: 300px;
+    min-width: 300px;
+    overflow: hidden;
+    border: 1px solid #00000011;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 9px 4px #E0E0E0; 
+    box-shadow: 0px 0px 9px 4px #E0E0E0;
+
+    .summary {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .placeholder {
+            border-radius: 5px 5px 0px 0px;
+            flex-grow: 4;
+        }
+    
+        .title {
+            flex-grow: 1;
+            font-weight: 700;
+        }
+    }
+
+    .description {
+        height: 100%;
+        width: 101%;
+        position: absolute;
+        left: -5px;
+        top: 0px;
+
+        background-color: gray;
+        opacity: 0.8;
+        color: white;
+        padding: 10px;
+        text-align: justify;
+    }
+}
